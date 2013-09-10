@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DF1643117DF73A0009FBAA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF1643017DF73A0009FBAA1 /* UIKit.framework */; };
+		3DF1643317DF73A0009FBAA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF1643217DF73A0009FBAA1 /* Foundation.framework */; };
+		3DF1643517DF73A0009FBAA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF1643417DF73A0009FBAA1 /* CoreGraphics.framework */; };
+		3DF1643B17DF73A0009FBAA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DF1643917DF73A0009FBAA1 /* InfoPlist.strings */; };
+		3DF1643D17DF73A0009FBAA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1643C17DF73A0009FBAA1 /* main.m */; };
+		3DF1644117DF73A0009FBAA1 /* YahtzeeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1644017DF73A0009FBAA1 /* YahtzeeAppDelegate.m */; };
+		3DF1644317DF73A0009FBAA1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF1644217DF73A0009FBAA1 /* Default.png */; };
+		3DF1644517DF73A0009FBAA1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF1644417DF73A0009FBAA1 /* Default@2x.png */; };
+		3DF1644717DF73A0009FBAA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF1644617DF73A0009FBAA1 /* Default-568h@2x.png */; };
+		3DF1644A17DF73A0009FBAA1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF1644817DF73A0009FBAA1 /* MainStoryboard.storyboard */; };
+		3DF1644D17DF73A0009FBAA1 /* YahtzeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1644C17DF73A0009FBAA1 /* YahtzeeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DF1642D17DF73A0009FBAA1 /* Yahtzee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yahtzee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF1643017DF73A0009FBAA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DF1643217DF73A0009FBAA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DF1643417DF73A0009FBAA1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DF1643817DF73A0009FBAA1 /* Yahtzee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Yahtzee-Info.plist"; sourceTree = "<group>"; };
+		3DF1643A17DF73A0009FBAA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DF1643C17DF73A0009FBAA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DF1643E17DF73A0009FBAA1 /* Yahtzee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yahtzee-Prefix.pch"; sourceTree = "<group>"; };
+		3DF1643F17DF73A0009FBAA1 /* YahtzeeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YahtzeeAppDelegate.h; sourceTree = "<group>"; };
+		3DF1644017DF73A0009FBAA1 /* YahtzeeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahtzeeAppDelegate.m; sourceTree = "<group>"; };
+		3DF1644217DF73A0009FBAA1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3DF1644417DF73A0009FBAA1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3DF1644617DF73A0009FBAA1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3DF1644917DF73A0009FBAA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3DF1644B17DF73A0009FBAA1 /* YahtzeeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YahtzeeViewController.h; sourceTree = "<group>"; };
+		3DF1644C17DF73A0009FBAA1 /* YahtzeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahtzeeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF1642A17DF73A0009FBAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF1643117DF73A0009FBAA1 /* UIKit.framework in Frameworks */,
+				3DF1643317DF73A0009FBAA1 /* Foundation.framework in Frameworks */,
+				3DF1643517DF73A0009FBAA1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DF1642417DF73A0009FBAA1 = {
+			isa = PBXGroup;
+			children = (
+				3DF1643617DF73A0009FBAA1 /* Yahtzee */,
+				3DF1642F17DF73A0009FBAA1 /* Frameworks */,
+				3DF1642E17DF73A0009FBAA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF1642E17DF73A0009FBAA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1642D17DF73A0009FBAA1 /* Yahtzee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF1642F17DF73A0009FBAA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1643017DF73A0009FBAA1 /* UIKit.framework */,
+				3DF1643217DF73A0009FBAA1 /* Foundation.framework */,
+				3DF1643417DF73A0009FBAA1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DF1643617DF73A0009FBAA1 /* Yahtzee */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1643F17DF73A0009FBAA1 /* YahtzeeAppDelegate.h */,
+				3DF1644017DF73A0009FBAA1 /* YahtzeeAppDelegate.m */,
+				3DF1644817DF73A0009FBAA1 /* MainStoryboard.storyboard */,
+				3DF1644B17DF73A0009FBAA1 /* YahtzeeViewController.h */,
+				3DF1644C17DF73A0009FBAA1 /* YahtzeeViewController.m */,
+				3DF1643717DF73A0009FBAA1 /* Supporting Files */,
+			);
+			path = Yahtzee;
+			sourceTree = "<group>";
+		};
+		3DF1643717DF73A0009FBAA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1643817DF73A0009FBAA1 /* Yahtzee-Info.plist */,
+				3DF1643917DF73A0009FBAA1 /* InfoPlist.strings */,
+				3DF1643C17DF73A0009FBAA1 /* main.m */,
+				3DF1643E17DF73A0009FBAA1 /* Yahtzee-Prefix.pch */,
+				3DF1644217DF73A0009FBAA1 /* Default.png */,
+				3DF1644417DF73A0009FBAA1 /* Default@2x.png */,
+				3DF1644617DF73A0009FBAA1 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF1642C17DF73A0009FBAA1 /* Yahtzee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF1645017DF73A0009FBAA1 /* Build configuration list for PBXNativeTarget "Yahtzee" */;
+			buildPhases = (
+				3DF1642917DF73A0009FBAA1 /* Sources */,
+				3DF1642A17DF73A0009FBAA1 /* Frameworks */,
+				3DF1642B17DF73A0009FBAA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yahtzee;
+			productName = Yahtzee;
+			productReference = 3DF1642D17DF73A0009FBAA1 /* Yahtzee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF1642517DF73A0009FBAA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Yahtzee;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Gerald Blake";
+			};
+			buildConfigurationList = 3DF1642817DF73A0009FBAA1 /* Build configuration list for PBXProject "Yahtzee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3DF1642417DF73A0009FBAA1;
+			productRefGroup = 3DF1642E17DF73A0009FBAA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF1642C17DF73A0009FBAA1 /* Yahtzee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF1642B17DF73A0009FBAA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF1643B17DF73A0009FBAA1 /* InfoPlist.strings in Resources */,
+				3DF1644317DF73A0009FBAA1 /* Default.png in Resources */,
+				3DF1644517DF73A0009FBAA1 /* Default@2x.png in Resources */,
+				3DF1644717DF73A0009FBAA1 /* Default-568h@2x.png in Resources */,
+				3DF1644A17DF73A0009FBAA1 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF1642917DF73A0009FBAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF1643D17DF73A0009FBAA1 /* main.m in Sources */,
+				3DF1644117DF73A0009FBAA1 /* YahtzeeAppDelegate.m in Sources */,
+				3DF1644D17DF73A0009FBAA1 /* YahtzeeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DF1643917DF73A0009FBAA1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF1643A17DF73A0009FBAA1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3DF1644817DF73A0009FBAA1 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF1644917DF73A0009FBAA1 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DF1644E17DF73A0009FBAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DF1644F17DF73A0009FBAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DF1645117DF73A0009FBAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yahtzee/Yahtzee-Prefix.pch";
+				INFOPLIST_FILE = "Yahtzee/Yahtzee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3DF1645217DF73A0009FBAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Yahtzee/Yahtzee-Prefix.pch";
+				INFOPLIST_FILE = "Yahtzee/Yahtzee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF1642817DF73A0009FBAA1 /* Build configuration list for PBXProject "Yahtzee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF1644E17DF73A0009FBAA1 /* Debug */,
+				3DF1644F17DF73A0009FBAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF1645017DF73A0009FBAA1 /* Build configuration list for PBXNativeTarget "Yahtzee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF1645117DF73A0009FBAA1 /* Debug */,
+				3DF1645217DF73A0009FBAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DF1642517DF73A0009FBAA1 /* Project object */;
+}
