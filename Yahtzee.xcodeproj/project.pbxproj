@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4C42A117E4760C00ADED43 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4C42A017E4760C00ADED43 /* Dice.m */; };
+		3D4C42A317E553BB00ADED43 /* y1jpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D4C42A217E553BB00ADED43 /* y1jpg.jpg */; };
+		3D4C42A717E5571000ADED43 /* 51clwvNd0wL._SL500_AA300_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D4C42A417E5570F00ADED43 /* 51clwvNd0wL._SL500_AA300_.jpg */; };
+		3D4C42A817E5571000ADED43 /* 6920270922_f258b2e68f_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D4C42A517E5571000ADED43 /* 6920270922_f258b2e68f_o.jpg */; };
+		3D4C42A917E5571000ADED43 /* Yahtzee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D4C42A617E5571000ADED43 /* Yahtzee.jpg */; };
+		3DAD5FFC17E3A35100CD3E46 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD5FF817E3A35100CD3E46 /* 1.png */; };
+		3DAD5FFD17E3A35100CD3E46 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD5FF917E3A35100CD3E46 /* 2.png */; };
+		3DAD5FFE17E3A35100CD3E46 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD5FFA17E3A35100CD3E46 /* 3.png */; };
+		3DAD5FFF17E3A35100CD3E46 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD5FFB17E3A35100CD3E46 /* 4.png */; };
+		3DAD600217E3AA2700CD3E46 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600017E3AA2700CD3E46 /* 5.png */; };
+		3DAD600317E3AA2700CD3E46 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600117E3AA2700CD3E46 /* 6.png */; };
+		3DAD600A17E3ABAD00CD3E46 /* 1s.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600417E3ABAD00CD3E46 /* 1s.png */; };
+		3DAD600B17E3ABAD00CD3E46 /* 2s.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600517E3ABAD00CD3E46 /* 2s.png */; };
+		3DAD600C17E3ABAD00CD3E46 /* 3s.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600617E3ABAD00CD3E46 /* 3s.png */; };
+		3DAD600D17E3ABAD00CD3E46 /* 4s.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600717E3ABAD00CD3E46 /* 4s.png */; };
+		3DAD600E17E3ABAD00CD3E46 /* 5s.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600817E3ABAD00CD3E46 /* 5s.png */; };
+		3DAD600F17E3ABAD00CD3E46 /* 6s.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD600917E3ABAD00CD3E46 /* 6s.png */; };
 		3DF1643117DF73A0009FBAA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF1643017DF73A0009FBAA1 /* UIKit.framework */; };
 		3DF1643317DF73A0009FBAA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF1643217DF73A0009FBAA1 /* Foundation.framework */; };
 		3DF1643517DF73A0009FBAA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF1643417DF73A0009FBAA1 /* CoreGraphics.framework */; };
@@ -21,6 +38,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4C429F17E4760C00ADED43 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		3D4C42A017E4760C00ADED43 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		3D4C42A217E553BB00ADED43 /* y1jpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = y1jpg.jpg; sourceTree = "<group>"; };
+		3D4C42A417E5570F00ADED43 /* 51clwvNd0wL._SL500_AA300_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 51clwvNd0wL._SL500_AA300_.jpg; sourceTree = "<group>"; };
+		3D4C42A517E5571000ADED43 /* 6920270922_f258b2e68f_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6920270922_f258b2e68f_o.jpg; sourceTree = "<group>"; };
+		3D4C42A617E5571000ADED43 /* Yahtzee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yahtzee.jpg; sourceTree = "<group>"; };
+		3DAD5FF817E3A35100CD3E46 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		3DAD5FF917E3A35100CD3E46 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		3DAD5FFA17E3A35100CD3E46 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		3DAD5FFB17E3A35100CD3E46 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		3DAD600017E3AA2700CD3E46 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		3DAD600117E3AA2700CD3E46 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		3DAD600417E3ABAD00CD3E46 /* 1s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1s.png; sourceTree = "<group>"; };
+		3DAD600517E3ABAD00CD3E46 /* 2s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2s.png; sourceTree = "<group>"; };
+		3DAD600617E3ABAD00CD3E46 /* 3s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3s.png; sourceTree = "<group>"; };
+		3DAD600717E3ABAD00CD3E46 /* 4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4s.png; sourceTree = "<group>"; };
+		3DAD600817E3ABAD00CD3E46 /* 5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5s.png; sourceTree = "<group>"; };
+		3DAD600917E3ABAD00CD3E46 /* 6s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6s.png; sourceTree = "<group>"; };
 		3DF1642D17DF73A0009FBAA1 /* Yahtzee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yahtzee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF1643017DF73A0009FBAA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DF1643217DF73A0009FBAA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +88,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D57A12317DFB9D30095CF67 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D4C42A417E5570F00ADED43 /* 51clwvNd0wL._SL500_AA300_.jpg */,
+				3D4C42A517E5571000ADED43 /* 6920270922_f258b2e68f_o.jpg */,
+				3D4C42A617E5571000ADED43 /* Yahtzee.jpg */,
+				3D4C42A217E553BB00ADED43 /* y1jpg.jpg */,
+				3DAD600417E3ABAD00CD3E46 /* 1s.png */,
+				3DAD600517E3ABAD00CD3E46 /* 2s.png */,
+				3DAD600617E3ABAD00CD3E46 /* 3s.png */,
+				3DAD600717E3ABAD00CD3E46 /* 4s.png */,
+				3DAD600817E3ABAD00CD3E46 /* 5s.png */,
+				3DAD600917E3ABAD00CD3E46 /* 6s.png */,
+				3DAD5FF817E3A35100CD3E46 /* 1.png */,
+				3DAD5FF917E3A35100CD3E46 /* 2.png */,
+				3DAD5FFA17E3A35100CD3E46 /* 3.png */,
+				3DAD5FFB17E3A35100CD3E46 /* 4.png */,
+				3DAD600017E3AA2700CD3E46 /* 5.png */,
+				3DAD600117E3AA2700CD3E46 /* 6.png */,
+				3DAD5FF317E39E3B00CD3E46 /* New Group */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3DAD5FF317E39E3B00CD3E46 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		3DF1642417DF73A0009FBAA1 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +154,8 @@
 				3DF1644817DF73A0009FBAA1 /* MainStoryboard.storyboard */,
 				3DF1644B17DF73A0009FBAA1 /* YahtzeeViewController.h */,
 				3DF1644C17DF73A0009FBAA1 /* YahtzeeViewController.m */,
+				3D4C429F17E4760C00ADED43 /* Dice.h */,
+				3D4C42A017E4760C00ADED43 /* Dice.m */,
 				3DF1643717DF73A0009FBAA1 /* Supporting Files */,
 			);
 			path = Yahtzee;
@@ -96,6 +164,7 @@
 		3DF1643717DF73A0009FBAA1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D57A12317DFB9D30095CF67 /* Images */,
 				3DF1643817DF73A0009FBAA1 /* Yahtzee-Info.plist */,
 				3DF1643917DF73A0009FBAA1 /* InfoPlist.strings */,
 				3DF1643C17DF73A0009FBAA1 /* main.m */,
@@ -164,6 +233,22 @@
 				3DF1644517DF73A0009FBAA1 /* Default@2x.png in Resources */,
 				3DF1644717DF73A0009FBAA1 /* Default-568h@2x.png in Resources */,
 				3DF1644A17DF73A0009FBAA1 /* MainStoryboard.storyboard in Resources */,
+				3DAD5FFC17E3A35100CD3E46 /* 1.png in Resources */,
+				3DAD5FFD17E3A35100CD3E46 /* 2.png in Resources */,
+				3DAD5FFE17E3A35100CD3E46 /* 3.png in Resources */,
+				3DAD5FFF17E3A35100CD3E46 /* 4.png in Resources */,
+				3DAD600217E3AA2700CD3E46 /* 5.png in Resources */,
+				3DAD600317E3AA2700CD3E46 /* 6.png in Resources */,
+				3DAD600A17E3ABAD00CD3E46 /* 1s.png in Resources */,
+				3DAD600B17E3ABAD00CD3E46 /* 2s.png in Resources */,
+				3DAD600C17E3ABAD00CD3E46 /* 3s.png in Resources */,
+				3DAD600D17E3ABAD00CD3E46 /* 4s.png in Resources */,
+				3DAD600E17E3ABAD00CD3E46 /* 5s.png in Resources */,
+				3DAD600F17E3ABAD00CD3E46 /* 6s.png in Resources */,
+				3D4C42A317E553BB00ADED43 /* y1jpg.jpg in Resources */,
+				3D4C42A717E5571000ADED43 /* 51clwvNd0wL._SL500_AA300_.jpg in Resources */,
+				3D4C42A817E5571000ADED43 /* 6920270922_f258b2e68f_o.jpg in Resources */,
+				3D4C42A917E5571000ADED43 /* Yahtzee.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +262,7 @@
 				3DF1643D17DF73A0009FBAA1 /* main.m in Sources */,
 				3DF1644117DF73A0009FBAA1 /* YahtzeeAppDelegate.m in Sources */,
 				3DF1644D17DF73A0009FBAA1 /* YahtzeeViewController.m in Sources */,
+				3D4C42A117E4760C00ADED43 /* Dice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +385,7 @@
 				3DF1645217DF73A0009FBAA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
