@@ -14,9 +14,10 @@
 @synthesize imageArray;
 @synthesize theButton;
 @synthesize index;
-- (void)initialize {
-   self.imageArray=[[NSMutableArray alloc] initWithCapacity:7];
-   self.imageArrayS = [[NSMutableArray alloc] initWithCapacity:7];
+- (void)initialize
+{
+    self.imageArray=[[NSMutableArray alloc] initWithCapacity:7];
+    self.imageArrayS = [[NSMutableArray alloc] initWithCapacity:7];
    
 
     self.imageArray[0]= [UIImage imageNamed:@"1.png"];

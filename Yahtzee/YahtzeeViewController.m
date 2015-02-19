@@ -139,13 +139,14 @@
 - (IBAction)DicePressed:(UIButton *)sender
 {
     for(int i = 0; i < self.diceNumber;i++)
+        
     if (self.hasRolled)
     {
         
         if(sender  == ((Dice*)self.theDice[i]).theButton && ((Dice*)self.theDice[i]).isSelected == NO)
         {
             
-        [((Dice*)self.theDice[i]).theButton setBackgroundImage:((Dice*)self.theDice[i]).imageArrayS[((Dice*)self.theDice[i]).index] forState:UIControlStateNormal];
+            [((Dice*)self.theDice[i]).theButton setBackgroundImage:((Dice*)self.theDice[i]).imageArrayS[((Dice*)self.theDice[i]).index] forState:UIControlStateNormal];
             ((Dice*)self.theDice[i]).isSelected = YES;
           
         }
@@ -162,41 +163,43 @@
 }
 
 
-- (IBAction)ScoresPressed:(UIButton *)sender {
+- (IBAction)ScoresPressed:(UIButton *)sender
+{
     
 }
 - (IBAction)Roll:(UIButton *)sender
   {
     self.hasRolled = YES;
-    if(self.rollTap){
-
-    [sender setTitle:@"Re-Roll" forState:UIControlStateNormal];
-    for(int i = 0; i < self.diceNumber;i++){
-    if(((Dice*)self.theDice[i]).isSelected==NO)
+    if(self.rollTap)
     {
-        self.random =  arc4random() % self.diceImages;
-      ((Dice*)self.theDice[i]).index = self.random;
-    
-    
-    
-        [((Dice*)self.theDice[i]).theButton setBackgroundImage:((Dice*)self.theDice[i]).imageArray[self.random]
-                          forState:UIControlStateNormal];
-               
-    }
-        
-        
 
-    }
-    
-    self.rollNumber++;
-    self.Test.text=[NSString stringWithFormat:@"RollN: %i",self.rollNumber ];
-    if(self.rollNumber >=self.maxRolls)
-    {
-        self.rollTap=NO;
-        [sender setTitle:@"Roll" forState:UIControlStateNormal];
+        [sender setTitle:@"Re-Roll" forState:UIControlStateNormal];
+        for(int i = 0; i < self.diceNumber;i++)
+        {
+            if(((Dice*)self.theDice[i]).isSelected==NO)
+            {
+                self.random =  arc4random() % self.diceImages;
+              ((Dice*)self.theDice[i]).index = self.random;
+            
+            
+            
+                [((Dice*)self.theDice[i]).theButton setBackgroundImage:((Dice*)self.theDice[i]).imageArray[self.random]
+                                  forState:UIControlStateNormal];
+                       
+            }
 
-    
-    }
+        }
+        
+        self.rollNumber++;
+        self.Test.text=[NSString stringWithFormat:@"RollN: %i",self.rollNumber ];
+            
+        if(self.rollNumber >=self.maxRolls)
+        {
+            self.rollTap=NO;
+            [sender setTitle:@"Roll" forState:UIControlStateNormal];
+
+        
+        }
     }
     
 }
@@ -255,7 +258,8 @@
                 }
             }
     }
-        if(self.singleTaos){
+        if(self.singleTaos)
+        {
             self.twosTap=NO;
         }
         self.twosL.text =[NSString stringWithFormat:@"%i",singles[1]];
@@ -406,7 +410,6 @@
             
             }
         
-        
         }
     
         if(self.isYahtzee)
@@ -432,55 +435,60 @@
     
 }
 - (IBAction)ThreeOfAKind:(UIButton *)sender {
-    if (self.hasRolled) {
-    if(self.threeOfAKindTap){
-    
-       
-        BOOL isThreeofKind = NO;
-    int sum = 0;
-    int temp[5];
-       
-    for (int copy = 0; copy < self.diceNumber; copy++)
+    if (self.hasRolled)
     {
+        if(self.threeOfAKindTap)
+        {
+        
+            BOOL isThreeofKind = NO;
+            int sum = 0;
+            int temp[5];
+               
+            for (int copy = 0; copy < self.diceNumber; copy++)
+            {
                 sum+= (((Dice*)self.theDice[copy]).index + 1);
                 temp[copy] = ((Dice*)self.theDice[copy]).index;
-    }
-        
-        [self insertionSort: temp with:self.diceNumber];
-        
-        if((temp[0]==temp[1] && temp[2]==temp[1])
-           ||(temp[1]==temp[2]&&temp[2]==temp[3])||(temp[2]==temp[3] && temp[4]==temp[2]))
-        {
-            isThreeofKind = YES;
-        
-        
-        }
-        self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i,T:%i,T:",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1,isThreeofKind];
+            }
+                
+                [self insertionSort: temp with:self.diceNumber];
+                
+                if((temp[0]==temp[1] && temp[2]==temp[1])
+                   ||(temp[1]==temp[2]&&temp[2]==temp[3])||(temp[2]==temp[3] && temp[4]==temp[2]))
+                {
+                    isThreeofKind = YES;
+                
+                
+                }
+                self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i,T:%i,T:",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1,isThreeofKind];
 
-        if(isThreeofKind)
-        {
-            kind[0]+=sum;
-            kind[7]+=sum;
-            self.total+=sum;
-                       self.totalL.text = [NSString stringWithFormat:@"%i",self.total];
-            self.lowerTotalL.text = [NSString stringWithFormat:@"%i",kind[7]];
-        }
+                if(isThreeofKind)
+                {
+                    kind[0]+=sum;
+                    kind[7]+=sum;
+                    self.total+=sum;
+                               self.totalL.text = [NSString stringWithFormat:@"%i",self.total];
+                    self.lowerTotalL.text = [NSString stringWithFormat:@"%i",kind[7]];
+                }
 
-    }
-        if(self.singleTaos){
-        self.threeOfAKindTap=NO;
+            }
+        if(self.singleTaos)
+        {
+            self.threeOfAKindTap=NO;
         }
         self.threeOfAkindL.text = [NSString stringWithFormat:@"%i",kind[0]];
 
     }
     }
-- (IBAction)SMStraight:(UIButton *)sender {
-    if (self.hasRolled) {
-    if(self.SMStraightTap){
-    BOOL isSMStraight= YES;
-  
-     
-            
+- (IBAction)SMStraight:(UIButton *)sender
+{
+    if (self.hasRolled)
+    {
+        if(self.SMStraightTap)
+        {
+            BOOL isSMStraight= YES;
+      
+         
+                
             int temp[5];
          
             for (int copy = 0; copy < self.diceNumber; copy++)
@@ -494,15 +502,13 @@
             for(int i = 1; i < self.diceNumber - 1; i++)
             {
                 if(temp[i]!= (temp[i-1] + 1))
-                   {
-                       isSMStraight = NO;
-                   }
+                {
+                    isSMStraight = NO;
+                }
                    
-                   }
+            }
                    
-            
-            
-            
+
             if(isSMStraight)
             {
                 kind[3]+=30;
@@ -514,22 +520,23 @@
             }
 
         }
-        if(self.singleTaos){
-        self.SMStraightTap=NO;
+        if(self.singleTaos)
+        {
+            self.SMStraightTap=NO;
         }
         self.SMStraightL.text = [NSString stringWithFormat:@"%i",kind[3]];
 
     }
 }
 
-- (IBAction)LGStraight:(UIButton *)sender {
-    if(self.hasRolled){
+- (IBAction)LGStraight:(UIButton *)sender
+{
+    if(self.hasRolled)
+    {
     
-    if(self.LGStraightTap){
-    BOOL isLGStraight= YES;
-    
-    
-        
+    if(self.LGStraightTap)
+    {
+        BOOL isLGStraight= YES;
         int temp[5];
         
         for (int copy = 0; copy < self.diceNumber; copy++)
@@ -538,6 +545,7 @@
         }
         
         [self insertionSort: temp with:self.diceNumber];
+        
         self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1];
         
         for(int i = 1; i < self.diceNumber; i++)
@@ -549,9 +557,7 @@
             
         }
         
-        
-        
-        
+    
         if(isLGStraight)
         {
             kind[4]+=40;
@@ -563,8 +569,9 @@
         }
         
     }
-        if(self.singleTaos){
-        self.LGStraightTap=NO;
+        if(self.singleTaos)
+        {
+            self.LGStraightTap=NO;
         }
         self.LGStraightL.text = [NSString stringWithFormat:@"%i",kind[4]];
 
@@ -574,69 +581,75 @@
 
 - (IBAction)FourOfAKind:(UIButton *)sender
 {
-    if (self.hasRolled) {
-    if(self.fourOfAKindTap){
-   
-        BOOL isFourOfKind=NO;
-        int sum = 0;
-        int temp[5];
-        for (int copy = 0; copy < self.diceNumber; copy++)
+    if (self.hasRolled)
+    {
+        if(self.fourOfAKindTap)
         {
-            sum+= (((Dice*)self.theDice[copy]).index + 1);
-            temp[copy] = ((Dice*)self.theDice[copy]).index;
-        }
-        
-        [self insertionSort: temp with:self.diceNumber];
-        
-        if ((temp[0]==temp[1]&&temp[2]==temp[1]&&temp[3]==temp[2])
-            ||(temp[1]==temp[2]&&temp[3]==temp[2]&&temp[4]==temp[3])) {
-            isFourOfKind=YES;
-        }
-                
-        self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i,F:%i",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1,isFourOfKind];
+       
+            BOOL isFourOfKind=NO;
+            int sum = 0;
+            int temp[5];
+            for (int copy = 0; copy < self.diceNumber; copy++)
+            {
+                sum+= (((Dice*)self.theDice[copy]).index + 1);
+                temp[copy] = ((Dice*)self.theDice[copy]).index;
+            }
+            
+            [self insertionSort: temp with:self.diceNumber];
+            
+            if ((temp[0]==temp[1]&&temp[2]==temp[1]&&temp[3]==temp[2])
+                ||(temp[1]==temp[2]&&temp[3]==temp[2]&&temp[4]==temp[3])) {
+                isFourOfKind=YES;
+            }
+                    
+            self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i,F:%i",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1,isFourOfKind];
 
-        
-        if(isFourOfKind)
-        {
-            kind[1]+=sum;
-            kind[7]+=sum;
-            self.total+=sum;
-                       self.totalL.text = [NSString stringWithFormat:@"%i",self.total];
-            self.lowerTotalL.text = [NSString stringWithFormat:@"%i",kind[7]];
-        }
-        
+            
+            if(isFourOfKind)
+            {
+                kind[1]+=sum;
+                kind[7]+=sum;
+                self.total+=sum;
+                           self.totalL.text = [NSString stringWithFormat:@"%i",self.total];
+                self.lowerTotalL.text = [NSString stringWithFormat:@"%i",kind[7]];
+            }
+            
     }
-        if(self.singleTaos){
-        self.fourOfAKindTap=NO;
+        if(self.singleTaos)
+        {
+            self.fourOfAKindTap=NO;
         }
         self.fourOfAKindL.text = [NSString stringWithFormat:@"%i",kind[1]];
 
     }
 
 }
-- (IBAction)FullHouse:(UIButton *)sender {
-    if (self.hasRolled) {
-    if(self.fullHouseTap){
-   
-
-    int temp[5];
- 
-    BOOL isFullHouse =NO;
-    for (int copy = 0; copy < self.diceNumber; copy++)
+- (IBAction)FullHouse:(UIButton *)sender
+{
+    if (self.hasRolled)
     {
-        temp[copy] = ((Dice*)self.theDice[copy]).index;
-    }
-    [self insertionSort: temp with:self.diceNumber];
-     
-    
-        if ((temp[0]==temp[1] && temp[1]==temp[2]
-             &&temp[3] ==temp[4] && temp[2]!=temp[3])
-            || (temp[0]==temp[1] && temp[1]!=temp[2]
-            &&temp[2]==temp[3] &&temp[3]==temp[4]))
+        if(self.fullHouseTap)
         {
-            isFullHouse=YES;
-        }
-        
+            int temp[5];
+         
+            BOOL isFullHouse =NO;
+            
+            for (int copy = 0; copy < self.diceNumber; copy++)
+            {
+                temp[copy] = ((Dice*)self.theDice[copy]).index;
+            }
+            
+            [self insertionSort: temp with:self.diceNumber];
+             
+            
+                if ((temp[0]==temp[1] && temp[1]==temp[2]
+                     &&temp[3] ==temp[4] && temp[2]!=temp[3])
+                    || (temp[0]==temp[1] && temp[1]!=temp[2]
+                    &&temp[2]==temp[3] &&temp[3]==temp[4]))
+                {
+                    isFullHouse=YES;
+                }
+            
         
         
         self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i,F:%i",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1,isFullHouse];
@@ -662,32 +675,35 @@
     
 }
 
-- (IBAction)Chance:(UIButton *)sender {
-    if (self.hasRolled) {
-    if(self.chanceTap){
-   
-    
-    int temp[5];
-    int sum = 0;
-    
-  
-    for (int copy = 0; copy < self.diceNumber; copy++)
+- (IBAction)Chance:(UIButton *)sender
+{
+    if (self.hasRolled)
     {
-        sum+= ((Dice*)self.theDice[copy]).index+1;
-        temp[copy]= ((Dice*)self.theDice[copy]).index;
-    }
-    
-    
-     [self insertionSort: temp with:self.diceNumber];
-    self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1];
-    
-    
-   
-        kind[6]+=sum;
-        kind[7]+=sum;
-        self.total+=sum;
-                self.totalL.text = [NSString stringWithFormat:@"%i",self.total];
-        self.lowerTotalL.text = [NSString stringWithFormat:@"%i",kind[7]];
+        if(self.chanceTap)
+        {
+       
+        
+        int temp[5];
+        int sum = 0;
+        
+      
+        for (int copy = 0; copy < self.diceNumber; copy++)
+        {
+            sum+= ((Dice*)self.theDice[copy]).index+1;
+            temp[copy]= ((Dice*)self.theDice[copy]).index;
+        }
+        
+        
+         [self insertionSort: temp with:self.diceNumber];
+        self.Test.text = [NSString stringWithFormat:@"%i,%i,%i,%i,%i",temp[0]+1,temp[1]+1,temp[2]+1,temp[3]+1,temp[4]+1];
+        
+        
+       
+            kind[6]+=sum;
+            kind[7]+=sum;
+            self.total+=sum;
+                    self.totalL.text = [NSString stringWithFormat:@"%i",self.total];
+            self.lowerTotalL.text = [NSString stringWithFormat:@"%i",kind[7]];
         
         
     }
@@ -769,11 +785,6 @@
         ((Dice*)self.theDice[i]).isSelected = NO;
     }
     
-    
-    
-        
-        
-    
     self.isYahtzee = NO;
     self.hasRolled = NO;
     
@@ -798,12 +809,8 @@
             
         }
         
-        
-        
     }
 
-    
-    
     }
 }
 
